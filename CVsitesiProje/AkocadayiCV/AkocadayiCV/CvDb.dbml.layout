@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CvDb">
+  <DataContextMoniker Name="/CvDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a7a51e53-7b6f-458c-98d8-f29b83932d1d" absoluteBounds="3.125, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CvDbDataContext/yoneticiler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee39cb40-f9e0-4f54-a9c4-52cd7c9d6f65" absoluteBounds="3.1399999999999997, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a0ab945-3a05-4e99-8bfd-aebcf039b60e" absoluteBounds="0.5, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CvDbDataContext/kategoriler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1eefc8c-5c9f-4d70-acf5-547fe6f18efb" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1905f18e-1630-41f5-b496-c1429694ef0e" absoluteBounds="0.75, 2.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/CvDbDataContext/makaleler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a990abf-dd85-4e35-bc7c-2a6c1ae43e9e" absoluteBounds="0.76500000000000012, 2.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.625 : 1.8862939453125); (1.625 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CvDbDataContext/kategoriler/kategoriler_makaleler" />
+      <nodes>
+        <classShapeMoniker Id="4a0ab945-3a05-4e99-8bfd-aebcf039b60e" />
+        <classShapeMoniker Id="1905f18e-1630-41f5-b496-c1429694ef0e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 1.48159912109375); (2.933 : 1.48159912109375); (2.933 : 2.058); (2.218752 : 2.058); (2.218752 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CvDbDataContext/yoneticiler/yoneticiler_makaleler" />
+      <nodes>
+        <classShapeMoniker Id="a7a51e53-7b6f-458c-98d8-f29b83932d1d" />
+        <classShapeMoniker Id="1905f18e-1630-41f5-b496-c1429694ef0e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
